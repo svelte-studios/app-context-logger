@@ -7,13 +7,15 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "release": "yarn lint && yarn test && standard-version && git push --follow-tags && npm publish",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
     "test": "yarn lint && jest"
   },
   "dependencies": {
     "debug": "^4.3.1"
   },
   "devDependencies": {
+    "@babel/eslint-plugin": "^7.12.1",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
