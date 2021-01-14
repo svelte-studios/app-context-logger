@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "env": { "es6": true, "node": true },
+  "extends": [
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "plugins": ["prettier", "import"],
+  "rules": {
+    "import/no-unresolved": "error"
+  }
+}
