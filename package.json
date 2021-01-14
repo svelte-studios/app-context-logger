@@ -1,0 +1,11 @@
+{
+  "name": "app-context-logger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/svelte-studios/app-context-logger.git",
+  "author": "Svelte Studios <info@sveltestudios.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.3.1"
+  }
+}
