@@ -8,7 +8,10 @@
   "scripts": {
     "lint": "eslint .",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish",
-    "test": "yarn lint && jest"
+    "test": "yarn lint && jest",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
   },
   "dependencies": {
     "debug": "^4.3.1"
@@ -20,7 +23,8 @@
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "husky": "^4.3.7",
+    "husky": "^5.0.6",
+    "pinst": "^2.1.1",
     "prettier": "^2.2.1"
   }
 }
